@@ -41,3 +41,7 @@
 
 
 ## Example of work
+
+![сайт вина шапка](https://github.com/JacobKleim/Wine/assets/119351169/d70737a0-759e-45ea-b6e0-fa1293197efb)
+
+![сайт вина ассортимент](https://github.com/JacobKleim/Wine/assets/119351169/b6bdb2af-88df-4d86-be89-36f989ca714d)
