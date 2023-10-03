@@ -25,15 +25,15 @@
    ```bash
    python -m venv venv
    ```
-   ```python
+   ```bash
    source venv/Scripts/activate
    ```
 
 3. Install dependencies:
-   ```bash
+   ```
    python -m pip install --upgrade pip
    ```
-   ```bash
+   ```
    pip install -r requirements.txt
    ```
    
