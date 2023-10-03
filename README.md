@@ -22,7 +22,7 @@
    ```
 
 2. Сreate and activate a virtual environment:
-   ```python
+   ```bash
    python -m venv venv
    ```
    ```python
@@ -30,16 +30,16 @@
    ```
 
 3. Install dependencies:
-   ```python
+   ```bash
    python -m pip install --upgrade pip
    ```
-   ```python
+   ```bash
    pip install -r requirements.txt
    ```
    
 
 4. Start the project:
-   ```python
+   ```bash
    python manage.py runserver 0.0.0.0:8000
    ```
    open the website http://127.0.0.1:8000/index.html
