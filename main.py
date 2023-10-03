@@ -14,8 +14,8 @@ template = env.get_template('template.html')
 
 rendered_page = template.render(
     drinks=utils.convert_to_dictionary(),
-    date=utils.get_year(),
-    year=utils.get_year_form(utils.get_year())
+    date=utils.get_past_years(),
+    year=utils.get_year_form(utils.get_past_years())
 )
 
 with open('index.html', 'w', encoding="utf8") as file:

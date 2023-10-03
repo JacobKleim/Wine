@@ -5,13 +5,13 @@ import pandas
 
 
 def convert_to_dictionary():
-    excel_data = pandas.read_excel('wine3.xlsx',
-                                   na_values='nan',
-                                   keep_default_na=False)
+    wines = pandas.read_excel('wine3.xlsx',
+                              na_values='nan',
+                              keep_default_na=False)
 
     wines_by_category = defaultdict(list)
 
-    for _, row in excel_data.iterrows():
+    for _, row in wines.iterrows():
         category = row['Категория']
         wine_data = {
             'Название': row['Название'],
@@ -25,13 +25,13 @@ def convert_to_dictionary():
     return wines_by_category
 
 
-def get_year():
+def get_past_years():
     now = datetime.datetime.now()
-    base_year = datetime.datetime(year=1920, month=1, day=1)
-    time_in_days = (now - base_year).days
-    days_in_a_year = 365
-    time_in_years = int(time_in_days / days_in_a_year)
-    return time_in_years
+    foundation_date = datetime.datetime(year=1920, month=1, day=1)
+    days = (now - foundation_date).days
+    year_days = 365
+    past_years = int(days / year_days)
+    return past_years
 
 
 def get_year_form(number):
