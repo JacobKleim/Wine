@@ -1,13 +1,43 @@
-# Новое русское вино
+# New Russian wine
 
-Сайт магазина авторского вина "Новое русское вино".
+## Project Description
+ - Website of the author's wine store "New Russian wine".
 
-## Запуск
+## Technologies and tools
+ - Python
+ - HTML
+ - JavaScript
+ - CSS
 
-- Скачайте код
-- Запустите сайт командой `python3 main.py`
-- Перейдите на сайт по адресу [http://127.0.0.1:8000](http://127.0.0.1:8000).
+## How to use
+1. Clone this repository and go to the project folder:
+   ```bash
+   cd /c/project_folder # for example
+   
+   git clone https://github.com/JacobKleim/Wine
+   
+   cd /c/project_folder/Wine 
+   ```
 
-## Цели проекта
+2. Сreate and activate a virtual environment:
+   ```bash
+   python -m venv venv 
+   
+   source venv/Scripts/activate
+   ```
 
-Код написан в учебных целях — это урок в курсе по Python и веб-разработке на сайте [Devman](https://dvmn.org).
+3. Install dependencies:
+   ```bash
+   python -m pip install --upgrade pip
+
+   pip install -r requirements.txt
+   ```
+
+4. Start the project:
+   ```bash
+   python manage.py runserver 0.0.0.0:8000
+   ```
+   open the website http://127.0.0.1:8000/index.html
+
+
+## Example of work
