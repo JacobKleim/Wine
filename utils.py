@@ -5,7 +5,7 @@ import pandas
 
 
 def convert_to_dictionary():
-    wines = pandas.read_excel('wine3.xlsx',
+    wines = pandas.read_excel('wine.xlsx',
                               na_values='nan',
                               keep_default_na=False)
 

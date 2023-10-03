@@ -13,28 +13,33 @@
 1. Clone this repository and go to the project folder:
    ```bash
    cd /c/project_folder # for example
-   
+   ```
+   ```bash
    git clone https://github.com/JacobKleim/Wine
-   
+   ```
+   ```bash
    cd /c/project_folder/Wine 
    ```
 
 2. Сreate and activate a virtual environment:
-   ```bash
-   python -m venv venv 
-   
+   ```python
+   python -m venv venv
+   ```
+   ```python
    source venv/Scripts/activate
    ```
 
 3. Install dependencies:
-   ```bash
+   ```python
    python -m pip install --upgrade pip
-
+   ```
+   ```python
    pip install -r requirements.txt
    ```
+   
 
 4. Start the project:
-   ```bash
+   ```python
    python manage.py runserver 0.0.0.0:8000
    ```
    open the website http://127.0.0.1:8000/index.html
