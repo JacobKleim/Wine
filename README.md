@@ -22,10 +22,10 @@
    ```
 
 2. Сreate and activate a virtual environment:
-   ```bash
+   ```
    python -m venv venv
    ```
-   ```bash
+   ```
    source venv/Scripts/activate
    ```
 
@@ -39,7 +39,7 @@
    
 
 4. Start the project:
-   ```bash
+   ```
    python manage.py runserver 0.0.0.0:8000
    ```
    open the website http://127.0.0.1:8000/index.html
