@@ -21,26 +21,43 @@
    cd /c/project_folder/Wine 
    ```
 
-2. Сreate and activate a virtual environment:
+2. Create a .env file with parameters:
+   ```
+   PATH_DRINKS_FILE=path to the drinks file
+   ```
+
+
+3. Сreate and activate a virtual environment:
    ```
    python -m venv venv
    ```
-   ```
+   ```bash
    source venv/Scripts/activate
    ```
 
-3. Install dependencies:
+4. Install dependencies:
    ```
    python -m pip install --upgrade pip
    ```
    ```
    pip install -r requirements.txt
    ```
-   
 
-4. Start the project:
+
+5. Create an Excel table and fill it in with your data according to the provided sample:
+| Category | Drink name | sort | price | image | promotion |
+|----------|-------------|-----------|-------|-----------------|-----------------|
+| Category | Kindzmarauli | Saperavi | 100$  | kindzmarauli.png | Profitable proposition |
+
+
+6. Start the project:
+   When running the project, specify the path to the directory where your Excel file is stored:
    ```
-   python manage.py runserver 0.0.0.0:8000
+   python main.py -f /c/wine.xlsx (indicate your path to the file)
+   ```
+   or specify the path in the PATH_DRINKS_FILE environment variable in the .env file and run the project:
+   ```
+   python main.py
    ```
    open the website http://127.0.0.1:8000/index.html
 

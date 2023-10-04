@@ -4,8 +4,8 @@ from collections import defaultdict
 import pandas
 
 
-def convert_to_dictionary():
-    wines = pandas.read_excel('wine.xlsx',
+def convert_by_category(file):
+    wines = pandas.read_excel(file,
                               na_values='nan',
                               keep_default_na=False)
 
@@ -13,7 +13,7 @@ def convert_to_dictionary():
 
     for _, row in wines.iterrows():
         category = row['Категория']
-        wine_data = {
+        wine = {
             'Название': row['Название'],
             'Категория': row['Категория'],
             'Сорт': row['Сорт'],
@@ -21,16 +21,14 @@ def convert_to_dictionary():
             'Картинка': row['Картинка'],
             'Акция': row['Акция'],
         }
-        wines_by_category[category].append(wine_data)
+        wines_by_category[category].append(wine)
     return wines_by_category
 
 
 def get_past_years():
-    now = datetime.datetime.now()
-    foundation_date = datetime.datetime(year=1920, month=1, day=1)
-    days = (now - foundation_date).days
-    year_days = 365
-    past_years = int(days / year_days)
+    foundation_year = 1920
+    current_year = datetime.datetime.now().year
+    past_years = current_year - foundation_year
     return past_years
 
 
