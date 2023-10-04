@@ -49,7 +49,7 @@
 
     | Category  | Drink name | sort     | price | image           | promotion             |
     |-----------|------------|----------|-------|-----------------|-----------------------|
-    | Category  | Kindzmarauli | Saperavi | 100$  | kindzmarauli.png | Profitable proposition |
+    | Wine      | Kindzmarauli | Saperavi | 100$  | kindzmarauli.png | Profitable proposition |
 
 
 
