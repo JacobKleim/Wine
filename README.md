@@ -47,9 +47,9 @@
 5. Create an Excel table and fill it in with your data according to the provided sample:
 
 
-| Category  | Drink name | sort     | price | image           | promotion             |
-|-----------|------------|----------|-------|-----------------|-----------------------|
-| Category  | Kindzmarauli | Saperavi | 100$  | kindzmarauli.png | Profitable proposition |
+        | Category  | Drink name | sort     | price | image           | promotion             |
+        |-----------|------------|----------|-------|-----------------|-----------------------|
+        | Category  | Kindzmarauli | Saperavi | 100$  | kindzmarauli.png | Profitable proposition |
 
 
 
