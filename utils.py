@@ -4,7 +4,7 @@ from collections import defaultdict
 import pandas
 
 
-def convert_by_category(file):
+def group_wines_by_category(file):
     wines = pandas.read_excel(file,
                               na_values='nan',
                               keep_default_na=False)

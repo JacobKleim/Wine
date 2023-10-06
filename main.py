@@ -13,13 +13,13 @@ def main():
 
     parser = argparse.ArgumentParser()
 
-    parser.add_argument('-f', '--file_path',
+    parser.add_argument('-f', '--path_drinks_file',
                         help='Путь к файлу с данными',
-                        default=os.environ.get('FILE_PATH'))
+                        default=os.environ.get('PATH_DRINKS_FILE'))
 
     args = parser.parse_args()
 
-    wines_file = args.file_path
+    wines_filepath = args.path_drinks_file
 
     env = Environment(
         loader=FileSystemLoader('.'),
@@ -28,12 +28,12 @@ def main():
 
     template = env.get_template('template.html')
 
-    date = utils.get_past_years()
+    winery_age = utils.get_past_years()
 
     rendered_page = template.render(
-        drinks=utils.convert_by_category(wines_file),
-        date=date,
-        year=utils.get_year_form(date)
+        drinks=utils.group_wines_by_category(wines_filepath),
+        winery_age=winery_age,
+        year_form=utils.get_year_form(winery_age)
     )
 
     with open('index.html', 'w', encoding="utf8") as file:
